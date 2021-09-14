@@ -17,7 +17,7 @@
           src="https://sary.com/img/logo-white-en%20copy.3257bb2a.svg"
           width="100"
         />
-         <div class="font-weight-bold  mx-3" >Heros System</div>
+         <div class="font-weight-bold  mx-3" >Super Heros System</div>
       </div>
 
       <v-spacer></v-spacer>
