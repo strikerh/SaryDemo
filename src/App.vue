@@ -1,32 +1,51 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-end">
+
+
+        <v-img
+          alt="Vuetify Name"
+          class="shrink mt-1 "
+
+          contain
+          min-width="100"
+          src="https://sary.com/img/logo-white-en%20copy.3257bb2a.svg"
+          width="100"
+        />
+         <div class="font-weight-bold  mx-3" >Heros System</div>
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="https://www.notion.so/sary/Hazem-Nabil-Frontend-Task-a687a77f5c444998a7e211d248a045d5"
+        target="_blank"
+        text
+      >
+        <span class="mr-2 hidden-sm-and-down">The assignment details</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import Vue from 'vue';
 
-#nav {
-  padding: 30px;
+export default Vue.extend({
+  name: 'App',
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+  data: () => ({
+    //
+  }),
+});
+</script>
