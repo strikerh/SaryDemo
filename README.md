@@ -43,7 +43,7 @@ And Finally, I hope that like this small demo and THANKS :)
 ## Project setup
 ```
 git clone https://github.com/strikerh/SaryDemo.git
-cd sary_demo
+cd SaryDemo
 yarn install
 ```
 
