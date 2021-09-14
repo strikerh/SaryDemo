@@ -1,9 +1,8 @@
 <script lang="ts">
 /* eslint-disable @typescript-eslint/no-explicit-any,@typescript-eslint/explicit-module-boundary-types */
-import {Component, Prop, PropSync, Vue, Watch} from 'vue-property-decorator';
+import {Component, PropSync, Vue, Watch} from 'vue-property-decorator';
 import HeroService from "@/services/HeroService";
 import {Inject} from "vue-di-container";
-import {InjectOptions} from 'vue-property-decorator/lib/decorators/Inject';
 
 
 @Component({
@@ -23,7 +22,6 @@ export default class FilterComponent extends Vue {
   public menu = false;
 
   public filterForm: any = {};
-  public timer: any = {};
 
   @PropSync('filterFields', {default: undefined})
   public syncedFilterFields!: any;
@@ -57,7 +55,7 @@ export default class FilterComponent extends Vue {
 
   }
 
-  onchange(event: any): void {
+  onchange(): void {
     this.filterForm = {...this.filterForm};
     this.$emit('onchange',  this.filterForm);
   }
