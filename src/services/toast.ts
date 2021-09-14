@@ -2,7 +2,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import iZtoast from 'izitoast';
 
 export class Toaster {
-    public static error(msg: string, prefix: string = 'خطأ') {
+
+    public static error(msg: string, prefix = 'خطأ') {
         return iZtoast.error({
             title: prefix,
             message: msg,
@@ -10,7 +11,7 @@ export class Toaster {
             rtl: true,
         });
     }
-    public static success(msg: string, prefix: string = 'Success') {
+    public static success(msg: string, prefix = 'Success') {
         return iZtoast.success({
             title: prefix,
             message: msg,

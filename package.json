@@ -64,7 +64,8 @@
       "vue/script-indent": "off",
       "vue/html-indent": "off",
       "vue/max-attributes-per-line": "off",
-      "vue/singleline-html-element-content-newline": "off"
+      "vue/singleline-html-element-content-newline": "off",
+      "@typescript-eslint/no-inferrable-types" : "off"
     }
   },
   "browserslist": [
