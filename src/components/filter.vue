@@ -37,7 +37,7 @@ export default class FilterComponent extends Vue {
     debugger
     console.log('$refs.menu', this.$refs.menu1)
     if (this.$refs.menu1) {
-      this.$refs.menu1[0].save(date)
+      (this.$refs.menu1 as any)[0].save(date)
     }
   }
 
